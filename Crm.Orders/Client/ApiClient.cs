@@ -1,4 +1,4 @@
-using System;
+http://adventureworks-api.azurewebsites.net using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
@@ -29,7 +29,8 @@ namespace Crm.Orders.Client
         /// with default configuration.
         /// </summary>
         /// <param name="basePath">The base path.</param>
-        public ApiClient(string basePath = "")
+        // this basePath string should point to the Azure API app endpoint
+        public ApiClient(string basePath = "http://adventureworks-api.azurewebsites.net ")
         {
            if (string.IsNullOrEmpty(basePath))
                 throw new ArgumentException("basePath cannot be empty");
